@@ -22,6 +22,7 @@ public class SearchVacanciesTests extends TestBase{
         step("Открыть страницу с вакансиями", () -> {
             Selenide.open("hr/vacancies/");
         });
+        Selenide.sleep(20000);
         step("Ввести в поиск искомое значение", () -> {
             $("[placeholder='Найти вакансию']").sendKeys(vacancyName);
         });
@@ -36,6 +37,7 @@ public class SearchVacanciesTests extends TestBase{
         step("Открыть страницу с вакансиями", () -> {
             Selenide.open("hr/vacancies/");
         });
+        Selenide.sleep(20000);
         step("Развернуть выпадающий список", () -> {
             $("#city").click();
         });
