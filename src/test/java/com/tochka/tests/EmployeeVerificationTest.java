@@ -25,7 +25,6 @@ public class EmployeeVerificationTest extends TestBase{
         step("Открыть страницу проверки сотрудника", () -> {
             Selenide.open("call-check");
         });
-        Selenide.sleep(20000);
         step("Ввести некорретный код подтверждения", () -> {
             $("#code").sendKeys(code);
         });

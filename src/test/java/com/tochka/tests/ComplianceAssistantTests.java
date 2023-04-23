@@ -23,7 +23,6 @@ public class ComplianceAssistantTests extends TestBase {
         step("Открыть страницу Бесплатный комплаенс-ассистент", () -> {
             Selenide.open("compliance-assistant/");
         });
-        Selenide.sleep(20000);
         step("Проверить тоггл по умолчанию", () -> {
             $("#first").parent().shouldHave(attribute("class", toggle + " left"));
         });
@@ -38,7 +37,6 @@ public class ComplianceAssistantTests extends TestBase {
         step("Открыть страницу Бесплатный комплаенс-ассистент", () -> {
             Selenide.open("compliance-assistant/");
         });
-        Selenide.sleep(20000);
         step("Переключить на тогл Я уже клиент", () -> {
             $("#second").click();
         });
