@@ -21,9 +21,11 @@
 
 Потребуется файл remote.properties следующего содержания:
 
-```browser = <browser type>
+```
+browser = <browser type>
 browserVersion = <browser version>
 baseURL = https://tochka.com
+browserSize =1920x1080
 remoteUrl = <server url for remote run, I used Selenoid>
 isRemote = true
 ```
@@ -34,12 +36,12 @@ isRemote = true
 
 ## Allure report:
 В Jenkins после сборки сразу добавила создание allure отчета, либо можно запустить локально таску AllureServe.
-Туда добавлены все необходимые аттачменты, для быстрого нахождения дефектов, также я добавила аннотации с наименованиями фичей и тестов:
+Туда добавлены все необходимые аттачменты для быстрого нахождения дефектов:
 
 ![This is an image](media/allure.png)
 
 ## Allure TestOps
-Подключила интеграцию с Allure TestOps, кейсы подтягиваются со всеми шагами в наш проект, в том числе можно развернуть и посмотреть строчку кода благодаря SelenideLogger:
+Подключила интеграцию с Allure TestOps, кейсы подтягиваются со всеми шагами в наш проект, в том числе можно развернуть и посмотреть строчку кода благодаря SelenideLogger. Также я добавила аннотации с наименованиями фичей и тестов:
 
 ![This is an image](media/allurereport.png)
 ![This is an image](media/alluretestops.png)
