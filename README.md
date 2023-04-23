@@ -33,12 +33,13 @@ isRemote = true
 [Готовый Build](https://jenkins.autotests.cloud/job/C16-sw_tata-tochka/) для удаленного запуска в Jenkins.
 
 ## Allure report:
-В allure report добавлены все необходимые аттачменты:
+В Jenkins после сборки сразу добавила создание allure отчета, либо можно запустить локально таску AllureServe.
+Туда добавлены все необходимые аттачменты, для быстрого нахождения дефектов, также я добавила аннотации с наименованиями фичей и тестов:
 
 ![This is an image](media/allure.png)
 
 ## Allure TestOps
-Подключила интеграцию с Allure TestOps, кейсы подтягиваются со всеми шагами:
+Подключила интеграцию с Allure TestOps, кейсы подтягиваются со всеми шагами в наш проект, в том числе можно развернуть и посмотреть строчку кода благодаря SelenideLogger:
 
 ![This is an image](media/allurereport.png)
 ![This is an image](media/alluretestops.png)
