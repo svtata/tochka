@@ -18,6 +18,7 @@
 ![This is an image](icons/Telegram.png)
 
 ## Как запустить удаленно:
+
 Потребуется файл remote.properties следующего содержания:
 
 ```browser = <browser type>
@@ -30,6 +31,11 @@ isRemote = true
 и установить переменную окружения env=remote
 
 [Готовый Build](https://jenkins.autotests.cloud/job/C16-sw_tata-tochka/) для удаленного запуска в Jenkins.
+
+## Allure report:
+В allure report добавлены все необходимые аттачменты:
+
+![This is an image](media/allure.png)
 
 ## Allure TestOps
 Подключила интеграцию с Allure TestOps, кейсы подтягиваются со всеми шагами:
