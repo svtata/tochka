@@ -15,4 +15,12 @@
 ![This is an image](icons/Allure_Report.png)
 ![This is an image](icons/Telegram.png)
 
+## Как запустить:
+
 [Готовый Build](https://jenkins.autotests.cloud/job/C16-sw_tata-tochka/) для удаленного запуска в Jenkins.
+
+
+### Телеграм бот:
+Уведомляет ответственного, содержит краткий отчет о прохождении и ссылку на Allure отчет:
+
+![This is an image](media/telegrambot.png)
