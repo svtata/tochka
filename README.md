@@ -19,7 +19,7 @@
 
 ## Как запустить удаленно:
 
-Потребуется файл remote.properties следующего содержания:
+Конфигурацию настроивала с помощью библиотеки [Owner](https://github.com/matteobaccan/owner). Для удаленного запуска потребуется файл remote.properties следующего содержания:
 
 ```
 browser = <browser type>
